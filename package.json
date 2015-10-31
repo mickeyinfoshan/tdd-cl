@@ -1,0 +1,21 @@
+{
+  "name": "tdd-cl",
+  "version": "1.0.0",
+  "description": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tdd"
+  ],
+  "author": "Mickey",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "tdd-start": "index.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.2.21",
+    "watch": "^0.16.0"
+  }
+}
