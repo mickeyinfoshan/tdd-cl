@@ -9,7 +9,7 @@ A little command line tool for Test Driven Development(TDD).
 
 ###Usage
 
-First, you need to write a config file called "tdd.config.js", which exports an object with three methods: test, dev_env and production_build.
+First, you need to write a config file called "tdd.config.js", which exports an object with three methods: test, beforeTest and afterTest.
 Here's a template:
     
     //tdd.config.js
@@ -32,7 +32,7 @@ Second, run the command as below:
     
 Then you'll be asked to finish you test code. You can just type `yes` to tell the programme when you have done.
 
-Then the dev_env defined in your config file will be set up and you can start to write some real code. The test code will be run when you modify any file in the project. When all tests are passed, which means your mission is completed, the programme will exit.
+Then the beforeTest defined in your config file will be set up and you can start to write some real code. The test code will be run when you modify any file in the project. When all tests are passed, which means your mission is completed, the programme will exit.
 
 Here's a simple example:
 
