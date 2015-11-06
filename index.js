@@ -42,9 +42,9 @@ while(!testFinished) {
 }
 console.log("Time to write some real code!");
 
-if(config.dev_env) {
+if(config.beforeTest) {
 	console.log("Your development environment should be started soon..");
-	config.dev_env();
+	config.beforeTest();
 }
 
 if(config.test) {
@@ -64,8 +64,8 @@ function testResultHandler(result) {
 
 function testSuccessHandler() {
 	console.log("Congratulation!! ");
-	if(config.test_success) {
-		config.test_success(function() {
+	if(config.afterTest) {
+		config.afterTest(function() {
 			console.log("Your mission is finished!");
 			process.exit();
 		});

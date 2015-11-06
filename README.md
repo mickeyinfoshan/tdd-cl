@@ -20,10 +20,10 @@ Here's a template:
         test : function(done){done(true)},
         
         //called before every mission starts
-        dev_env : function(){},
+        beforeTest : function(){},
         
         //called after all tests are passed
-        test_sucess : function(done){done()}
+        afterTest : function(done){done()}
     };
 
 Second, run the command as below:
